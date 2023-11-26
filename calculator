@@ -1,0 +1,24 @@
+def calculator(x,y,n):
+    if n=="+":
+        print("addition is:",x+y)
+    elif n=="-":
+        print("substraction is:",x-y)
+    elif n=="*":
+        print("multiplication is:",x*y)
+    elif n=="/":
+        if y!=0:
+            print("division is:",x/y)
+        else:
+            print("error,division not possible")
+    elif n=="%":
+        if y!=0:
+            print("modulus is:",x%y)
+        else:
+            print("error:modulus not possible")
+    else:
+        print("invalid operator")
+x=float(input("enter the fist value:"))
+y=float(input("enter the second value:"))
+n=input("choose operator(+,-,*,/,%):")
+calculator(x,y,n)
+        
